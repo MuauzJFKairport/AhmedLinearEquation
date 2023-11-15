@@ -18,7 +18,7 @@ public class LinearEquation {
     }
 
     public double yIntercept() {
-        double yint = y2 - (slope()*x2);
+        double yint = roundedToHundredth(y2 - (slope()*x2));
         if (slope()!= 0) {
             return yint;
         }
